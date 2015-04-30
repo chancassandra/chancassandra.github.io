@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Cassandra Chan </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <a href='#' onclick='homePage();return false;'>
+                <img src='file:///Users/cchan/Desktop/Website/V1_icon.png'alt='' />
+            </a>
+        </header>
+
+        <div class="jumbotron">
+            <div class="content">
+                 <body onload = "homePage()">
+                <h1 id='mainText'></h1>
+            </div>
+        </div>         
+
+       <nav>
+            <ul class="container">
+                 <li>
+                    <a href='#' onclick='aboutPage();return false;'>
+                        <img src='file:///Users/cchan/Desktop/Website/about.png'alt='About Icon' />
+                        <p>About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' onclick='resumePage();return false;'>
+                        <img src='file:///Users/cchan/Desktop/Website/resume.png' alt='Resume Icon' />
+                        <p>Resum&#233</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' onclick='homePage();return false;'>
+                        <img src='file:///Users/cchan/Desktop/Website/home.png' alt='Home Icon' />
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' onclick='portfolioPage();return false;'>
+                        <img src='file:///Users/cchan/Desktop/Website/portfolio.png' alt='Portfolio Icon' />
+                        <p>Portfolio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' onclick='contactPage();return false;'>
+                        <img src='file:///Users/cchan/Desktop/Website/contact.png' alt='Contract Icon' />
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            var about = "<p> I am a second year <a href = 'https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering'> Systems Design engineering</a> student at the University of Waterloo. I am passionate about working on projects that change lives.  In my free time, I like to peruse food blogs, take photos, and read anything but textbooks. </p><p> Specialties: Project management, user experience design, product design, writing and editing </p><figure><img src='file:///Users/cchan/Desktop/Website/About%20page%20icons/pm.png'><figcaption>Project management</figcaption></figure><figure><img src='file:///Users/cchan/Desktop/Website/About%20page%20icons/ux.png'><figcaption>User experience design</figcaption></figure><figure><img src='file:///Users/cchan/Desktop/Website/About%20page%20icons/pd.png'><figcaption>Product design</figcaption></figure><figure><img src='file:///Users/cchan/Desktop/Website/About%20page%20icons/writing.png'><figcaption>Writing</figcaption></figure>";
+
+            var resume = "<p>Being part of a co-op program allows me to explore a variety of positions and industries.</p><p> As a an Operational project coordinator in the Engineering department at St. Michael's Hospital, I managed over 60 construction projects simultaneously. I was responsible for working with clients throughout the project lifecycle, including scope and design development, scheduling, site coordination, and resolving deficiencies.</p><p>I decided to return to the SMH Engineering  department for my second co-op term as an infrastructure project coordinator. In addition to my previous responsibilities, I managed procuring, budgeting, and commissioning of capital equipment and renovations.</p><p>This summer, I will be working at Blackberry as an OS Securities project coordinator.</p><p> If you are interested in learning more about my work, my resumé can be viewed <a href='file:///Users/cchan/Desktop/Website/Resume.pdf' target='_blank'>here</a>.</p>";
+
+            var portfolio = "<p> Insert links to projects here. Maybe in a table? Who knows. Maybe circlular icons all in a row with a fade in effect on hover.</p><p> Projects: Pacekeeper, website mockups, InSYDE solutions pod, lie detector. </p>";
+
+            var contact = "<p> You can reach me at cassandrachan6@gmail.com. </p><p> Social media links: Github, LinkedIn</p>";
+
+            function aboutPage() {
+                document.getElementById('mainText').innerHTML = about; 
+            }
+            function resumePage() {
+                document.getElementById('mainText').innerHTML =  resume;
+            }
+            function homePage() {
+                document.getElementById('mainText').innerHTML = 
+                    '<h1> Cassandra Chan </h1><p>Insert catchy byline here</p>';
+            }
+            function portfolioPage() {
+                document.getElementById('mainText').innerHTML = portfolio;
+            }
+            function contactPage() {
+                document.getElementById('mainText').innerHTML = contact;
+            }
+        </script>
+    </body>
+</html>
