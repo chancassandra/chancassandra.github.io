@@ -50,8 +50,8 @@ img {
 .jumbotron .content {
   position: relative;
   top:15px;
-  left:0;
-  right: 0;
+  left:0px;
+  right: 0px;
   border-radius: 25px;
   border: 3px solid #CFCFCF;
   width: 80vw;
@@ -95,4 +95,12 @@ img {
 .jumbotron img {
   height:55px;
   width:55px;
+}
+
+footer h2 {
+  font-size: 10px;
+  color: #5a5a5a;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
 }
